@@ -35,6 +35,7 @@ public class StartSelenium {
         wd.findElement(By.className("login_login__3EHKB"));
 
         wd.findElement(By.id("root"));
+        wd.findElement(By.cssSelector("#root"));
 
         wd.findElement(By.tagName("div"));
         wd.findElement(By.tagName("h1"));
@@ -44,6 +45,10 @@ public class StartSelenium {
         wd.findElement(By.tagName("button"));
         wd.findElement(By.tagName("script"));
 
+        wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.cssSelector("div"));
+        wd.findElement(By.cssSelector(".container"));
+
 
         wd.findElement(By.linkText("home"));
         wd.findElement(By.linkText("about"));
@@ -52,6 +57,12 @@ public class StartSelenium {
         wd.findElement(By.partialLinkText("ho"));
         wd.findElement(By.partialLinkText("abo"));
         wd.findElement(By.partialLinkText("log"));
+
+        wd.findElement(By.cssSelector("[href^='/login']"));//start
+        wd.findElement(By.cssSelector("[href$='/lin']"));//end
+        wd.findElement(By.cssSelector("[href*='/ogi']"));//contains
+        wd.findElement(By.cssSelector("[href='/lo']"));
+        wd.findElement(By.cssSelector("[href]"));
 
 
 
