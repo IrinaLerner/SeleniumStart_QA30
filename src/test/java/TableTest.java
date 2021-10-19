@@ -23,6 +23,7 @@ public class TableTest {
     @Test
     public void tableTestCss() {
         WebElement canada = wd.findElement(By.cssSelector("tr:nth-child(8) td:last-child"));
+        //WebElement canada1 = wd.findElement(By.xpath(//tbody tr:nth-child(8) td:nth-child(3));
         String text = canada.getText();
 
         System.out.println(text);

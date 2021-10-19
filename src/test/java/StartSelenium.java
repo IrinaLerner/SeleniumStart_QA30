@@ -15,7 +15,6 @@ public class StartSelenium {
     @BeforeMethod
     public void preCondition(){
         wd=new ChromeDriver();
-       // System.setProperty("webdriver.chrome.driver",);
        // wd.get("https://contacts-app.tobbymarshall815.vercel.app/login");
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/login");
        // wd.navigate().forward();
@@ -62,20 +61,20 @@ public class StartSelenium {
 
 
         wd.findElement(By.linkText("HOME"));
-        wd.findElement(By.linkText("about"));
-        wd.findElement(By.linkText("login"));
+        wd.findElement(By.linkText("ABOUT"));
+        wd.findElement(By.linkText("LOGIN"));
         wd.findElement(By.xpath("//*[@href='/login']"));
         wd.findElement(By.cssSelector("[href]"));
-        wd.findElement(By.partialLinkText("ho"));
-        wd.findElement(By.partialLinkText("abo"));
-        wd.findElement(By.partialLinkText("log"));
+        wd.findElement(By.partialLinkText("HO"));
+        wd.findElement(By.partialLinkText("ABO"));
+        wd.findElement(By.partialLinkText("LOG"));
 
         wd.findElement(By.cssSelector("[href^='/login']"));//start
         wd.findElement(By.xpath("//*[starts-with(@href,'/lo')]"));
-        wd.findElement(By.cssSelector("[href$='/lin']"));//end
-        wd.findElement(By.cssSelector("[href*='/ogi']"));//contains
+        wd.findElement(By.cssSelector("[href$='in']"));//end
+        wd.findElement(By.cssSelector("[href*='ogi']"));//contains
         wd.findElement(By.xpath("//*[contains(@href,'/lo')]"));
-        wd.findElement(By.cssSelector("[href='/lo']"));
+        wd.findElement(By.cssSelector("[href^='/lo']"));
         wd.findElement(By.cssSelector("[href]"));
 
 
